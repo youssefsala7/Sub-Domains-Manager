@@ -12,6 +12,14 @@
   --highlight: #2688a8;
 }
 
+.dark {
+  --primary-bg: #1f2937;
+  --card-bg: #374151;
+  --border-color: #4b5563;
+  --text-dark: #f3f4f6;
+  --highlight: #0ea5e9;
+}
+
 body {
   margin: 0;
   font-family: 'Space Mono', monospace;
@@ -107,8 +115,8 @@ a:hover {
   }
 
   .social-card {
-    @apply bg-[var(--card-bg)] border border-[var(--border-color)] rounded-[25px] p-[14px_20px] 
-    flex items-center justify-between my-3 shadow-sm transition-all duration-300 no-underline 
+    @apply w-full bg-[var(--card-bg)] border border-[var(--border-color)] rounded-[25px] p-[14px_20px]
+    flex items-center justify-between my-3 shadow-sm transition-all duration-300 no-underline
     text-[var(--text-dark)] hover:bg-[#dff3f9] hover:translate-y-[-2px] hover:shadow-md;
   }
 
